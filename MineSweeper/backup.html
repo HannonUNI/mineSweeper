@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <script src="FieldController.js"></script>
+    <script src="https://kit.fontawesome.com/e6920e6a27.js" crossorigin="anonymous"></script>
+
+    <style>
+        #field {
+            margin: auto;
+            padding: 10px;
+        }
+
+        #loseOverlayDiv {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 90%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        #winOverlayDiv {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 90%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: #201c1c;
+            background-repeat: no-repeat;
+            background-image: url('media/bg4.svg');
+        }
+
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 50px;
+        }
+
+        #difficulty {
+            border-radius: 0;
+        }
+
+        :root {
+
+            --colorShadeE: #FFDD00;
+            --colorShadeD: #3498DB;
+        }
+
+        .button {
+            vertical-align: middle;
+            color: var(--colorShadeA);
+        }
+
+        .btn {
+            padding: 1em 2em;
+            /* border-radius: 1em; */
+            border: #3498DB;
+            background: var(--colorShadeE);
+            transition: all 175ms cubic-bezier(0, 0, 1, 1);
+        }
+
+        .block:hover {
+            opacity: 0.5;
+        }
+
+        .btn:hover {
+            background: var(--colorShadeD);
+            transform: translate(0, 0.375em);
+        }
+
+        .endGif {
+            position: absolute;
+            bottom: 0%;
+            right: 25%;
+            left: 50%;
+            margin-left: -150px;
+            height: 250px;
+            width: 300px;
+        }
+
+        #extendor {
+            height: 35px;
+            width: 100%;
+        }
+
+        .credite {
+            position: fixed;
+            bottom: 0;
+            right: 0px;
+            color: aliceblue;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <h1 style="color:red">Help Ukraine by sweeping this field of Russians mines</h1>
+    <div id="loseOverlayDiv">
+        <img src="media/lose.gif" class="endGif">
+    </div>
+
+    <div id="winOverlayDiv">
+        <img src="media/win.gif" class="endGif">
+    </div>
+
+    <div id="footer">
+        <select class="btn" name="difficulty" id="difficulty">
+            <option value="Easy">Easy 9*9</option>
+            <option value="Medium">Medium 19*15</option>
+            <option value="Hard">Hard 27*20</option>
+            <option value="Insane">Insane 37*26</option>
+            <option value="Inhumane">Inhumane 55*27</option>
+            <option value="Impossible">Impossible 101*49</option>
+        </select>
+        <button class="btn" type="button" id="newGame" onclick="init()">new game</button>
+    </div>
+
+    <div class="credite">
+        <p>Made by Hannon</p>
+        <p>Managed by Osama</p>
+    </div>
+
+    <div id='field'>
+    </div>
+    <div id="extendor">
+    </div>
+
+</body>

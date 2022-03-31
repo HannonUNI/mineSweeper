@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1920" height="823" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-1" bx:pinned="true">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 0);"/>
+      <stop offset="0.279" style="stop-color: rgba(252, 252, 252, 0);"/>
+      <stop offset="0.614" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="0.907" style="stop-color: rgb(0, 38, 255); stop-opacity: 0.67;"/>
+      <stop offset="1" style="stop-color: rgb(255, 0, 0); stop-opacity: 0.62;"/>
+    </linearGradient>
+    <linearGradient id="gradient-1-0" gradientTransform="matrix(-0.000838, -0.680728, 0.519534, -0.002371, 0.835636, 1.066628)" x1="0.116" y1="0.023" x2="1.116" y2="0.023" xlink:href="#gradient-1"/>
+  </defs>
+  <path d="M 0 640.227 C 1.734 638.328 258.434 585.324 260 589.897 C 261.354 593.851 614.944 847.807 615.208 847.807 C 615.472 847.807 1245.863 601.863 1243.482 601.705 C 1241.101 601.547 1925.03 194.797 1919 192.263 C 1914.206 190.839 1923.68 579.282 1925.614 1171.617 L 5.614 1171.617 L 0 640.227 Z" fill-rule="evenodd" opacity=".2" style="fill: url(#gradient-1-0);" transform="translate(0 -171.393)"/>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="14.659 7.95 416.839 411.259" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-1" bx:pinned="true">
+      <title>russia</title>
+      <stop offset="0.141" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="0.384" style="stop-color: rgb(0, 0, 255);"/>
+      <stop offset="0.703" style="stop-color: rgb(255, 0, 0);"/>
+    </linearGradient>
+    <marker id="marker-0" viewBox="0 0 100 100" overflow="visible" orient="auto" refX="50" refY="50" bx:pinned="true">
+      <rect x="23.149" y="10.811" width="57.932" height="59.107" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+    </marker>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="218.122" y1="-4.078" x2="218.122" y2="424.182" id="gradient-1-2" gradientTransform="matrix(0.956383, 0, 0, 0.916987, 9.212472, 21.956112)" xlink:href="#gradient-1"/>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="223.243" y1="17.614" x2="223.243" y2="409.721" id="gradient-0">
+      <stop offset="0" style="stop-color: rgba(0, 0, 0, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+  </defs>
+  <path d="M 64.229 398.654 C 64.229 405.404 60.236 409.721 53.236 409.721 L 36.074 409.72 C 29.073 409.72 23.876 406.007 23.876 399.257 L 23.876 43.364 C 23.876 29.749 29.853 17.614 44.051 17.614 C 58.251 17.614 64.229 29.146 64.229 42.761 L 64.229 398.654 Z M 394.052 18.217 C 388.961 18.217 383.645 19.252 378.582 21.463 C 342.031 37.463 314.937 42.894 292.345 42.894 C 244.379 42.894 216.501 18.457 161.232 18.448 C 141.744 18.451 118.305 21.95 89.827 30.297 L 89.827 299.134 C 115.426 291.476 137.721 288.319 157.704 288.319 C 216.605 288.319 257.619 312.696 316.576 312.696 C 326.858 312.696 337.685 311.953 349.202 310.207 C 366.278 307.618 384.871 302.826 405.452 294.984 C 416.292 291.195 422.611 282.375 422.611 272.942 L 422.611 41.787 C 422.611 26.731 409.253 18.217 394.052 18.217 Z" style="fill-rule: nonzero; paint-order: stroke markers; stroke-miterlimit: 26; stroke-linecap: round; fill: url(#gradient-1-2); stroke-linejoin: round; stroke-dashoffset: -50px; stroke: url(#gradient-0); stroke-width: 0px;"/>
+</svg>
