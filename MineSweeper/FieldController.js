@@ -135,24 +135,22 @@ function colorize() {
 }
 
 function createField(id) {
-    {
-        // get Adjacentes
-        let adj = [];
-        let adjPoint = getAdjacentes(id);
-        for (const k of adjPoint) {
-            adj.push(k.pointToString());
-        }
-        // Create mines
-        while (minesNum < minMines) {
-            let i = getRandomInt(height);
-            let j = getRandomInt(width);
+    // get Adjacentes
+    let adj = [];
+    let adjPoint = getAdjacentes(id);
+    for (const k of adjPoint) {
+        adj.push(k.pointToString());
+    }
+    // Create mines
+    while (minesNum < minMines) {
+        let i = getRandomInt(height);
+        let j = getRandomInt(width);
 
-            if (XYtoString(i, j) == id.pointToString() || adj.includes(XYtoString(i, j))) continue;
-            if (!mines.has(XYtoString(i, j))) {
-                setMine(i, j);
-                // fill around mines
-                incrementSurrounding(XYtoString(i, j));
-            }
+        if (XYtoString(i, j) == id.pointToString() || adj.includes(XYtoString(i, j))) continue;
+        if (!mines.has(XYtoString(i, j))) {
+            setMine(i, j);
+            // fill around mines
+            incrementSurrounding(XYtoString(i, j));
         }
     }
     // place event listeners
@@ -163,11 +161,9 @@ function incrementSurrounding(i, j) {
     adj = getAdjacentes(new Point(XYtoString(i, j)));
     for (let i = 0; i < adj.length; i++) {
         let e = adj[i];
-        if (field[e.x][e.y] != -1) {
+        if (field[e.x][e.y] != -1)
             field[e.x][e.y]++;
-        }
     }
-
 }
 
 function setMine(i, j) {
